@@ -1,4 +1,5 @@
 FROM python:3-stretch
+FROM node:8
 
 LABEL version="1.0.0"
 LABEL maintainer="Apex"
@@ -22,7 +23,8 @@ RUN apt-get update && \
   rm docker-${DOCKERVERSION}.tgz && \
   rm -rf /var/lib/apt/lists/* && \
   pip install --upgrade pip && \
-  pip install setuptools awscli aws-sam-cli
+  pip install setuptools awscli aws-sam-cli && \
+  
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 ENTRYPOINT ["/entrypoint.sh"]
