@@ -1,5 +1,4 @@
-FROM python:3-stretch
-FROM node:8
+FROM nikolaik/python-nodejs:python3.7-nodejs12
 
 LABEL version="1.0.0"
 LABEL maintainer="Apex"
