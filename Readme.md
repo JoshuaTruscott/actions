@@ -1,3 +1,5 @@
+Fork of apex/actions with a modified docker container to allow building NodeJS apps with AWS SAM
+
 <img src="http://tjholowaychuk.com:6000/svg/title/APEX/ACTIONS">
 
 ## Actions
